@@ -1,5 +1,5 @@
 const modals = () => {
-	
+
   function bindModal(triggerSelector, modalSelector, closeSelector) {
     const trigger = document.querySelectorAll(triggerSelector),
       modal = document.querySelector(modalSelector),
@@ -31,7 +31,7 @@ const modals = () => {
     });
   }
 
-  function showMOdalByTime(selector, time) {
+  function showModalByTime(selector, time) {
     setTimeout(() => {
       document.querySelector(selector).style.display = "block";
       document.body.style.overflow = "hidden";
@@ -44,6 +44,6 @@ const modals = () => {
     ".popup_engineer .popup_close"
   );
   bindModal(".phone_link", ".popup", ".popup .popup_close");
-  showMOdalByTime(".popup", 3000);
+//   showModalByTime(".popup", 60000);
 };
 export default modals;
