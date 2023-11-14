@@ -28,7 +28,6 @@ const changeModalState = (state) => {
                 }
               });
             } else {
-				
               state[prop] = item.value;
             }
             break;
